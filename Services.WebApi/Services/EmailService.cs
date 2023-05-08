@@ -1,5 +1,7 @@
 ﻿namespace Services.WebApi.Services;
 
+using global::Services.WebApi.Configurations;
+using Microsoft.Extensions.Options;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
@@ -11,12 +13,12 @@ public class EmailService
     private readonly string _smtpUsername;
     private readonly string _smtpPassword;
 
-    public EmailService()
+    public EmailService(IOptions<GmailSettings> options)
     {
-        _smtpHost = "smtp.gmail.com";
-        _smtpPort = 587;
-        _smtpUsername = "mail";
-        _smtpPassword = "password";
+        _smtpHost = options.Value.Host;
+        _smtpPort = options.Value.Port;
+        _smtpUsername = options.Value.UserName;
+        _smtpPassword = options.Value.Password;
     }
 
     public async Task SendEmailAsync(string recipientEmail, string subject, string message)
