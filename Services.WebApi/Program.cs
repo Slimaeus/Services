@@ -11,7 +11,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection("EmailService:Gmail"));
+builder.Services.Configure<GoogleDriveSettings>(builder.Configuration.GetSection("Api:GoogleDrive"));
 builder.Services.AddScoped<EmailService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
