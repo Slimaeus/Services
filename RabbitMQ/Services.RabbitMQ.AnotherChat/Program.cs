@@ -41,13 +41,15 @@ channel.BasicConsume(queue: "hello2",
                      autoAck: true,
                      consumer: consumer);
 
+const string Name = "User 2";
+
 while (true)
 {
     string message = Console.ReadLine() ?? string.Empty;
 
     if (message == string.Empty) break;
 
-    var body = Encoding.UTF8.GetBytes(message);
+    var body = Encoding.UTF8.GetBytes($"{Name}: {message}");
 
     channel.BasicPublish(exchange: string.Empty,
                          routingKey: "hello1",
