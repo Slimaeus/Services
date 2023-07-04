@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.WebApi", "Services
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{0DC6FA99-D9DF-4BC1-96B7-E5B66E17D3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.RabbitMQ.Consumer", "RabbitMQ\Services.RabbitMQ.Consumer\Services.RabbitMQ.Consumer.csproj", "{109D589F-B803-451E-8372-D9B54AAB234E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.RabbitMQ.Consumer", "RabbitMQ\Services.RabbitMQ.Consumer\Services.RabbitMQ.Consumer.csproj", "{109D589F-B803-451E-8372-D9B54AAB234E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.RabbitMQ.Producer", "RabbitMQ\Services.RabbitMQ.Producer\Services.RabbitMQ.Producer.csproj", "{53BABF84-442E-472F-82FC-13868A3E3A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.RabbitMQ.Producer", "RabbitMQ\Services.RabbitMQ.Producer\Services.RabbitMQ.Producer.csproj", "{53BABF84-442E-472F-82FC-13868A3E3A2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.RabbitMQ.Chat", "RabbitMQ\Services.RabbitMQ.Chat\Services.RabbitMQ.Chat.csproj", "{5D9600C7-D967-47A1-B581-F9C90932B5CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.RabbitMQ.AnotherChat", "RabbitMQ\Services.RabbitMQ.AnotherChat\Services.RabbitMQ.AnotherChat.csproj", "{E71DA918-71A2-47B8-9983-E0B3D5D53526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,14 @@ Global
 		{53BABF84-442E-472F-82FC-13868A3E3A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53BABF84-442E-472F-82FC-13868A3E3A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53BABF84-442E-472F-82FC-13868A3E3A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9600C7-D967-47A1-B581-F9C90932B5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9600C7-D967-47A1-B581-F9C90932B5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9600C7-D967-47A1-B581-F9C90932B5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9600C7-D967-47A1-B581-F9C90932B5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71DA918-71A2-47B8-9983-E0B3D5D53526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71DA918-71A2-47B8-9983-E0B3D5D53526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71DA918-71A2-47B8-9983-E0B3D5D53526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71DA918-71A2-47B8-9983-E0B3D5D53526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{109D589F-B803-451E-8372-D9B54AAB234E} = {0DC6FA99-D9DF-4BC1-96B7-E5B66E17D3FE}
 		{53BABF84-442E-472F-82FC-13868A3E3A2A} = {0DC6FA99-D9DF-4BC1-96B7-E5B66E17D3FE}
+		{5D9600C7-D967-47A1-B581-F9C90932B5CE} = {0DC6FA99-D9DF-4BC1-96B7-E5B66E17D3FE}
+		{E71DA918-71A2-47B8-9983-E0B3D5D53526} = {0DC6FA99-D9DF-4BC1-96B7-E5B66E17D3FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B961B2A8-18CD-4F29-9B3B-0F5DDC97DC2D}
